@@ -55,11 +55,11 @@ Clone or download this repository
 Built with:
 
 Front-end:
-        ejs
-		HTML
-		CSS
-		Javascript
-        Bootstrap
+         ejs
+		 HTML
+		 CSS
+		 Javascript
+         Bootstrap
 		
 		
 Back-end:
