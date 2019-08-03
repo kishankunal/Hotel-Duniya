@@ -1,0 +1,113 @@
+body {
+  background-color: #000;
+}
+
+#landing-header {
+  padding-top: 40vh;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+#landing-header h1 {
+  color: #fff;
+  margin: 0.5em auto;
+}
+
+.entryLink {
+  color: #fff;
+  opacity: 1;
+}
+
+.entryLink:hover {
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.entryLink:focus {
+  color: #fff;
+  opacity: 0.8;
+  outline: 0;
+  text-decoration: none;
+}
+
+.entryLink:visited {
+  color: #fff;
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* background slide show */
+.slideshow { 
+  height: 100%;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.slideshow li { 
+  animation: imageAnimation 50s linear 2.5s infinite; 
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(1);
+  width: 100%;
+  z-index: 0;
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://cdn.hipwallpaper.com/i/62/28/AQgtum.jpg) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://cdn.allwallpaper.in/wallpapers/2400x1350/1868/hotel-palace-of-bussaco-portugal-architecture-buildings-2400x1350-wallpaper.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://www.desktopbackground.org/download/o/2011/12/05/307720_hotels-hd-wallpapers_2560x1600_h.jpg);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://img1.akspic.com/image/90144-tourism-bay-hotel-tourist_attraction-leisure-3840x2160.jpg);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(https://stmed.net/sites/default/files/portofino-wallpapers-28820-9954628.jpg);
+  animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+  0%, 40% { 
+    animation-timing-function: ease-in;
+    opacity: 0; 
+    /*transform: scale(1);*/
+  }
+  10% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    /*transform: scale(1.1);*/
+  }
+  20% {
+    opacity: 1;
+    /*transform: scale(1.2);*/
+  }
+  30% {
+    opacity: 0;
+    /*transform: scale(1.2);*/
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}

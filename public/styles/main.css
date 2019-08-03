@@ -1,0 +1,144 @@
+body {
+  padding-top: 70px;
+}
+
+/* text link styling */
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 0;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+.xyz img {
+  height:30em;
+}
+/* campground cards */
+.card {
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  transition: box-shadow 200ms cubic-bezier(0.4,0.0,0.2,1);
+}
+
+.card:hover {
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+/* campground cards button */
+.btn-b-mg {
+  margin-bottom: 20px;
+}
+.card img {
+  height: 160px;
+  width: 100%;
+}
+/* image stying */
+.thumbnail img {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.thumbnail img[data-src] {
+  opacity: 0;
+}
+
+.thumbnail {
+  padding: 0;
+  margin-left: 0px;
+}
+.cde{
+  text-align: center;
+  font-size: 30px;
+  border-radius: 30px;
+}
+.campground__image {
+  height: 150px;
+}
+/* tent logo */
+span .align-bottom {
+  vertical-align: bottom;
+}
+
+
+/* login, register, reset form style */
+.rwd-form {
+ margin: 25px auto;
+ width: 90%;
+}
+
+@media (min-width: 600px) {
+  .rwd-form {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .rwd-form {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .rwd-form {
+    width: 30%;
+  }
+}
+
+/* delete button */
+.delete-form {
+  display: inline;
+}
+.abc{
+  background: #eee;
+}
+/* used in about page*/
+.sss{
+  margin-left: 47px;
+  padding-top: 13px;
+  height: 230px;
+}
+.ss{
+  margin-left: 94px;
+  padding-top: 13px;
+  height: 380px;
+}
+.img-thumbnail img{
+  height:400px;
+  
+  border-radius: 30px;
+}
+.img-thumbnail{
+  padding: 0;
+  width:40%;
+  border-radius: 30px;
+  
+}
+.aboutus{
+  float: left;
+  margin-left: 10%;
+  padding-top: 30px;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  width:50%;
+  height: 450px;
+  border-radius: 30px;
+}
+.contact{
+  margin-left: 50px;
+}
+.dd{
+  margin-left: 0;
+}
+/* Google Maps */
+#map {
+    height: 400px;
+    width: 100%;
+}
