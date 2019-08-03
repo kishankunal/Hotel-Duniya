@@ -24,7 +24,7 @@
     "geocoder": "^0.2.2",
     "helmet": "^3.20.0",
     "method-override": "^2.3.5",
-    "moment": "^2.17.1",
+    "moment": "^2.19.3",
     "mongoose": "^4.11.9",
     "nodemailer": "^6.3.0",
     "passport": "^0.3.2",
