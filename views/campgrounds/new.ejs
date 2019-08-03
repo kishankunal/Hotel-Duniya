@@ -1,0 +1,34 @@
+<% include ../partials/header %>
+<div class="row">
+  <h1 style="text-align: center;">Post a New Hotel</h1>
+  <div class="rwd-form">
+    <form action="/campgrounds" method="POST" >
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input class="form-control" type="text" name="name" placeholder="The Oberoi Cecil" autocomplete="off" required />
+      </div>
+      <div class="form-group">
+        <label for="image">Image</label>
+        <input class="form-control" type="text" name="image" placeholder="image-url" autocomplete="off" required />
+      </div>
+      <div class="form-group">
+        <label for="cost">Price</label>
+        <input class="form-control" type="number" name="cost" placeholder="1000" min="10" step="10" autocomplete="off" required />
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input class="form-control" type="text" name="location" id="location" placeholder="Shimla, India" autocomplete="off" />
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input class="form-control" type="text" name="description" placeholder="The Oberoi Cecil, Shimla" autocomplete="off" />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-md btn-primary btn-block">Submit!</button>
+      </div>
+    </form>
+    
+    <a href="/campgrounds">Back</a>
+  </div>
+</div>
+<% include ../partials/footer %>

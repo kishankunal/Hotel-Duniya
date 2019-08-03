@@ -1,0 +1,41 @@
+<% include ../partials/header %>
+  <header class="jumbotron">
+    <h1 class="col-xs-12"><i class='fa fa-hotel' style='font-size:60px'></i> Welcome to Hotel Duniya</h1>
+    <p>Pick your favourite Hotel from the world's largest collection of Hotels.</p>
+    <form class="form-inline" action="/campgrounds" method="GET">
+      <div class="form-group has-feedback">
+        <label for="search"></label>
+        <input class="form-control" type="text" name="search" placeholder="Search Hotels" autocomplete="off" />
+        <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+      </div>
+    </form>
+    <hr>
+    <a class="pull-right" href="/campgrounds/new">
+      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+      Share New Hotel
+    </a>
+  </header>
+
+  <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+    <% if (noMatch !== null) {%>
+      <div class="col-md-12">
+        <h4><%= noMatch %></h4>
+      </div>
+    <% } %>
+    <% campgrounds.forEach(campground => {%>
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail card">
+          <img class="campground__image" data-src="<%= campground.image %>" alt="<%= campground.name %>" />
+          <div class="caption">
+            <h4 class="caption"><%= campground.name %></h4>
+          </div>
+          <p>
+            <a class="btn btn-primary btn-sm btn-b-mg" href="/campgrounds/<%= campground._id %>">
+              More Info
+            </a>
+          </p>
+        </div>
+      </div>
+    <% })%>
+  </div>
+<% include ../partials/footer %>

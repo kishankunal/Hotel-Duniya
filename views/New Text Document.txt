@@ -1,0 +1,2 @@
+reset-password is not connected to app.js
+reset form is not accessible yet
