@@ -1,0 +1,2 @@
+reset password can be implemented using node mailer which we will implement in the letter part of the project;
+currently its not implemented
