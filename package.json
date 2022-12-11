@@ -19,7 +19,7 @@
     "cookie-parser": "^1.4.4",
     "dotenv": "^4.0.0",
     "ejs": "^2.3.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.11.3",
     "geocoder": "^0.2.2",
     "helmet": "^3.20.0",
